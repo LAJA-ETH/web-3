@@ -1,0 +1,46 @@
+@import '../../../variables';
+
+.create-order {
+  padding: 20px 40px;
+  width: 440px;
+  .item {
+    margin-top: 20px;
+    .cap {
+      margin-bottom: 20px;
+    }
+  }
+
+  .desc {
+    margin-top: 20px;
+  }
+
+  .btn {
+    margin-top: 40px;
+    display: inline-block;
+  }
+
+  &-modal {
+    min-width: 300px;
+    &-header {
+      margin-bottom: 30px;
+    }
+
+    &-body {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+       
+      div {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .btn {
+        margin: auto;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 930px) {
+}

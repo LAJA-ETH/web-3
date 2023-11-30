@@ -1,0 +1,73 @@
+@import '../../../variables';
+
+.withdraw-funds {
+  padding: 20px 40px;
+  width: 440px;
+  .item {
+    margin-top: 20px;
+    .cap {
+      margin-bottom: 20px;
+    }
+  }
+
+  .desc {
+    margin-top: 20px;
+  }
+
+  .btn {
+    margin-top: 40px;
+    display: inline-block;
+  }
+
+  &-modal {
+    &-header {
+
+    }
+
+    &-content {
+      div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+      }
+
+      .img {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        img {
+          background: white;
+          padding: 10px;
+          margin: auto;
+        }
+      }
+
+      .btn {
+        display: inline-block;
+        float: right;
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+.react-responsive-modal-modal {
+  max-width: 60%;
+  width: unset;
+  display: inline-block;
+  padding: 20px;
+}
+
+@media screen and (max-width: 720px) {
+  .withdraw-funds {
+    padding: 5%;
+    width: 90%;
+  }
+
+  .react-responsive-modal-modal {
+    max-width: 100%;
+    width: unset;
+    display: inline-block;
+    padding: 20px;
+  }
+}

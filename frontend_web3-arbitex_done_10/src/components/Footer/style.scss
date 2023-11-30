@@ -1,0 +1,55 @@
+@import '../../variables';
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: $dark_6;
+  width: calc(100vw - 240px);
+  padding: 10px 30px;
+  box-sizing: border-box;
+
+  &-right {
+    display: flex;
+
+    img {
+      margin-left: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .footer {
+    justify-content: flex-end;
+    &-left {
+      display: none;
+    }
+
+    &-right {
+      div  {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .footer {
+    width: 100vw;
+    justify-content: space-between;
+    &-left {
+      display: block;
+
+      img {
+        width: 10vw;
+      }
+    }
+
+    &-right {
+      img {
+        width: 4vw;
+        margin-left: 2vw;
+      }
+    }
+  }
+}

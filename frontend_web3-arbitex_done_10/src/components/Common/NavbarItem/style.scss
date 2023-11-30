@@ -1,0 +1,38 @@
+@import '../../../variables';
+
+.navbar-item {
+  @include menu;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 10px 0px 10px 20px;
+  position: relative;
+  color: $dark_3;
+
+  i {
+    margin-right: 8px;
+  }
+
+  &-img {
+    width: 16px;
+    height: 16px;
+
+    margin-right: 10px;
+  }
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.05);
+  }
+
+  &-left {
+    position: absolute;
+    background: radial-gradient(91315.7% 1164.01% at 0% 0%, #CEB72F 0%, #1EEBC6 100%);
+    left: 0px;
+    height: 100%;
+  }
+}
+
+.selected {
+  background: rgba(255, 255, 255, 0.05);
+  color: $dark_1;
+}

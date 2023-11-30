@@ -1,0 +1,159 @@
+@import '../../variables';
+
+.home {
+  background: #151616;
+  padding: 10px 30px;
+  &-header {
+    display: flex;
+
+    .caption {
+      margin-left: 20px;
+    }
+  }
+
+  .section {
+    .statistics-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .statistics {
+        width: 28%;
+        margin-bottom: 20px;
+      }
+    }
+
+    .search-section {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 30px;
+      cursor: pointer;
+
+      transition: all 150ms ease-in-out;
+  
+      &:hover {
+        box-shadow: 0 0 10px 0 $secondary inset, 0 0 10px 4px $secondary;
+      }
+
+      &:active {
+        transform: scale(0.95);
+      }
+    }
+    .hr-section {
+      margin-top: 20px;
+    }
+
+    .desc-section {
+      margin-top: 20px;
+      .title {
+        margin-bottom: 20px;
+      }
+
+      &-list {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+
+    .help-section {
+      width: 1039px;
+      margin: 40px 0px;
+      padding: 20px;
+      .help-title {
+        margin-bottom: 20px;
+      }
+
+      .help-item {
+        &::before {
+          content: '•';
+          margin: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1760px) {
+  .home {
+    .section {
+      .desc-section {  
+        &-list {
+          flex-wrap: wrap;
+          .card {
+            width: 45%;
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }  
+}
+
+@media screen and (max-width: 1439px) {
+  .home {
+    .section {
+      .statistics-section {
+        flex-wrap: wrap;
+  
+        .statistics {
+          width: 512px;
+          margin-bottom: 20px;
+        }
+      }
+      .desc-section {  
+        &-list {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+
+          .card {
+            margin-bottom: 20px;
+          }
+        }
+      }
+
+      .help-section {
+        width: unset;
+      }
+    }
+  }  
+}
+
+@media screen and (max-width: 1180px) {
+  .home {
+    .section {
+      .desc-section {  
+        &-list {
+          .card {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }  
+}
+
+@media screen and (max-width: 700px) {
+  .home {
+    .section {
+      .statistics-section {
+        .statistics {
+          flex-direction: column;
+          width: 100%;
+          &-content {
+            .title {
+              margin-top: 20px;
+              text-align: center;
+            }
+          }
+
+          &-raise {
+            margin: auto;
+          }
+        }
+      }
+    }
+  }
+}

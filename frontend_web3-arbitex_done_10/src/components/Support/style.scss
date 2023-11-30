@@ -1,0 +1,115 @@
+@import '../../variables';
+
+.support {
+  background: #151616;
+  height: calc(100% - 44px);
+  padding: 10px 30px;
+  display: flex;
+  flex-direction: column;
+
+  &-header {
+    display: flex;
+    align-items: center;
+
+    .caption {
+      margin-left: 20px;
+    }
+
+    .btn {
+      margin-left: auto;
+    }
+  }
+
+  &-content {
+    width: 780px;
+    margin-top: 30px;
+    &-row {
+      margin-top: 20px;
+      .textarea {
+        margin-top: 10px;
+      }
+
+      .button {
+        display: inline-block;
+        margin-top: 20px;
+      }
+    }
+
+    .main-info {
+      display: flex;
+      gap: 24px;
+      .item {
+        flex-grow: 1;
+        .input {
+          margin-top: 10px;
+        }
+      }
+    }
+
+    .discord-link {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      i {
+        cursor: pointer;
+      }
+    }
+  }
+
+  &-footer {
+    background: $dark_6;
+    padding: 30px;
+    margin: -10px -30px;
+    margin-top: auto;
+
+    display: flex;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .support {
+    &-content {
+      width: 100%;
+  
+      .main-info {
+        flex-direction: column;
+      }
+    }
+  
+    &-footer {
+      &-content {
+        flex-direction: column;
+  
+        .right {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .support {
+    &-footer {
+      &-content {  
+        .right {
+          flex-wrap: wrap;
+          align-items: center;
+          .column {
+            width: 40%;
+          }
+        }
+      }
+
+      &-bottom {
+        img {
+          margin-left: 16vw * 0.2;
+          width: 20vw * 0.2;
+        }
+      }
+    }
+  }
+}
+

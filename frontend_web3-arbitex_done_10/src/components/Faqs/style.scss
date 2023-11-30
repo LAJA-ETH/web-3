@@ -1,0 +1,34 @@
+@import '../../variables';
+
+.faqs {
+  background: #151616;
+  padding: 10px 30px;
+  &-header {
+    display: flex;
+    align-items: center;
+
+    .caption {
+      margin-left: 20px;
+    }
+
+    .btn {
+      margin-left: auto;
+    }
+  }
+  &-content {
+    display: grid;
+    grid-template-columns: auto auto;
+
+    & > div {
+      margin: 4px;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .faqs {
+    &-content {
+      grid-template-columns: auto;
+    }
+  }  
+}

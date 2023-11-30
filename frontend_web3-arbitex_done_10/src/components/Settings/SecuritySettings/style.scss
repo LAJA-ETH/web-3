@@ -1,0 +1,55 @@
+@import '../../../variables';
+
+.security-settings {
+  padding: 20px 40px;
+  display: flex;
+  &-col {
+    width: 50%;
+
+    .container {
+      width: 388px;
+      .letter-group {
+        display: flex;
+  
+        div {
+          margin: 0px 2px;
+        }
+      }
+      
+      & > div, img {
+        margin-top: 20px;
+      }
+
+      .btn {
+        display: inline-block;
+      }
+
+      .qr-img {
+        width: 142.31px;
+        height: 142.31px;
+        background-color: $dark_1;
+      }
+    }
+  }
+
+  &:not(&:last-child) {
+    border-right: 1px solid $dark_4;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .security-settings {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .security-settings {
+    &-col {
+      width: 100%;
+      .container {
+        width: 100%;
+      }
+    }
+  }
+}

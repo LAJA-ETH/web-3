@@ -1,0 +1,46 @@
+@import '../../variables';
+
+.announcements {
+  background: #151616;
+  padding: 10px 30px;
+  &-header {
+    display: flex;
+    align-items: center;
+
+    .caption {
+      margin-left: 20px;
+    }
+  }
+
+  &-content {
+    .item {
+      background: $dark_6;
+      padding: 20px;
+      margin-top: 30px;
+      .row {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+
+        & div {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+
+  &-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .announcements {
+    &-footer {
+      flex-direction: column;
+    }
+  }
+}

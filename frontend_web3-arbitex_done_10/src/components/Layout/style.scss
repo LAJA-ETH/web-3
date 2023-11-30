@@ -1,0 +1,23 @@
+@import '../../variables';
+
+.app-container {
+  background-color: $dark_7;
+  display: flex;
+  .main-right {
+    width: calc(100% - 240px);
+    display: flex;
+    flex-direction: column;
+
+    .footer {
+      margin-top: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .app-container {
+    .main-right {
+      width: calc(100%);
+    }
+  }
+}

@@ -1,0 +1,35 @@
+@import '../../../variables';
+
+.account-statistics {
+  background-color: $dark_6;
+  padding: 24px;
+  width: 378px;
+
+  &-header {
+    display: flex;
+    align-items: center;
+    .percent {
+      position: relative;
+      width: 62px;
+      height: 62px;
+
+      .circle-outer, .circle-inner {
+        position: absolute;
+      }
+    }
+
+    .title {
+      margin-left: 10px;
+    }
+  }
+
+  &-content {
+    display: flex;
+    flex-wrap: wrap;
+    .item {
+      width: 88px;
+      margin-right: 79px;
+      margin-top: 20px;
+    }
+  }
+}

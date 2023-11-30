@@ -1,0 +1,114 @@
+@import '../../variables';
+
+.my-team {
+  background: #151616;
+  padding: 10px 30px;
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+    .caption {
+      margin-left: 0px;
+    }
+
+    .referral {
+      margin-left: auto;
+      background: unset;
+
+      input {
+        width: 200px;
+      }
+    }
+  }
+
+  &-content {
+    .row {
+      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      .statistics {
+        justify-content: flex-start;
+      }
+
+      .referals {
+        width: 100%;
+        background-color: $dark_6;
+        padding: 20px;
+        overflow-x: auto;
+        .caption {
+          margin-bottom: 30px;
+        }
+        .table-content {
+          min-width: 486px;
+          @include P4;
+          color: $dark_3;
+    
+          &-item {
+            display: flex;
+            border-bottom: 1px solid rgba($color: $dark_1, $alpha: 0.03);
+            padding: 10px;
+            justify-content: space-between;
+            align-items: center;
+    
+            div {
+              flex: 1 1 0px;
+              i {
+                margin-left: 4px;
+              }
+            }
+  
+            .override {
+              &::before {
+                content: '$'
+              }
+            }
+          }
+        }
+    
+        .table-title {
+          min-width: 486px;
+          @include table_title_1;
+          background-color: rgba($color: $dark_1, $alpha: 0.03);
+          color: $dark_3;
+    
+          display: flex;
+          justify-content: space-between;
+          padding: 10px;
+    
+          &-item {
+            flex: 1 1 0px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .my-team {
+    &-header {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+  
+      .referral {
+        margin-left: unset;
+        padding-left: 0px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .my-team {
+    &-header {
+      .referral {
+        input {
+          width: 40vw;
+        }
+      }
+    }
+  }
+}

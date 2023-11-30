@@ -1,0 +1,29 @@
+@import '../../../variables';
+
+.faq {
+  background-color: $dark_6;
+  padding: 20px;
+
+  &-header {
+    display: flex;
+    align-items: center;
+    .img {
+      flex-basis: 28px;
+      flex-grow: 0;
+      flex-shrink: 0;
+      height: 28px;
+      background-color: $secondary;
+      border-radius: 50%;
+      text-align: center;
+
+      margin-right: 10px;
+      div {
+        line-height: 28px;
+      }
+    }
+  }
+
+  &-content {
+    margin-top: 10px;
+  }
+}

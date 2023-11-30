@@ -1,0 +1,55 @@
+@import '../../../variables';
+
+.input {
+  background: $dark_5;
+  display: flex;
+  padding: 16px;
+  align-items: center;
+  img {
+    margin-right: 20px;
+  }
+
+  i {
+    margin-right: 20px;
+    color: $dark_4;
+    cursor: pointer;
+  }
+
+  .frontImg {
+    width: 17px;
+    height: 17px;
+  }
+
+  .backImg {
+    width: 17px;
+    height: 17px;
+  }
+
+  input {
+    @include input_lg;
+    color: $dark_2;
+
+    width: 100%;
+    background-color: transparent;
+    border: 0px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover, 
+  input:-webkit-autofill:focus, 
+  input:-webkit-autofill:active  {
+      -webkit-box-shadow: 0 0 0 30px $dark_5 inset !important;
+      -webkit-text-fill-color: $dark_2;
+  }
+
+}
+
+.disabled {
+  * {
+    cursor: not-allowed;
+  }
+}

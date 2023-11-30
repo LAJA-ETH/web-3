@@ -1,0 +1,10 @@
+@import '../../../variables';
+
+.customOverlay {
+  background: rgba($color: $dark_5, $alpha: 0.6);
+}
+.customModal {
+  background: rgba($color: $dark_7, $alpha: 1);
+  width: 100%;
+}
+

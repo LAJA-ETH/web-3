@@ -1,0 +1,321 @@
+@import './variables';
+
+body {
+  margin: 0px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  /* width */
+  &::-webkit-scrollbar {
+    width: 3px;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: $dark_6;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: $dark_5;
+  }
+
+  // * {
+  //   -webkit-user-select: none;
+  //   -khtml-user-select: none;
+  //   -moz-user-select: none;
+  //   -ms-user-select: none;
+  //   user-select: none;
+  // }
+}
+
+.App {
+  .app-container {
+    display: flex;
+    position: relative;
+  }
+
+  .Toastify {
+    * {
+      font-family: 'Saira' !important;
+    }
+  }
+}
+
+
+@media screen and (max-width: 640px) {
+  .App {
+    .app-container {
+      .navbar {
+        position: fixed;
+        z-index: 1;
+      }
+      .main-right {
+
+      }
+    }
+  } 
+}
+
+@font-face {
+  font-family: 'Saira';
+  src: url('./assets/font/Saira/static/Saira/Saira-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url("./assets/font/sf-pro-display-cufonfonts/SFPRODISPLAYREGULAR.OTF") format("opentype");
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./assets/font/Poppins-Font-2/Poppins-Regular.ttf');
+}
+
+.H1 {
+  @include H1;
+}
+
+.H2 {
+  @include H2;
+}
+
+.H3 {
+  @include H3;
+}
+
+.H4 {
+  @include H4;
+}
+
+.H5 {
+  @include H5;
+}
+
+.H6 {
+  @include H6;
+}
+
+.P1 {
+  @include P1;
+}
+
+.P2 {
+  @include P2;
+}
+
+.P3 {
+  @include P3;
+}
+
+.P4 {
+  @include P4;
+}
+
+.P5 {
+  @include P5;
+}
+
+.table_title_1 {
+  @include table_title_1;
+}
+
+.table_title_2 {
+  @include table_title_2;
+}
+
+.btn_lg {
+  @include btn_lg;
+}
+
+.btn_md {
+  @include btn_md;
+}
+
+.btn_sm {
+  @include btn_sm;
+}
+
+.tag_md {
+  @include tag_md;
+}
+
+.tag_sm {
+  @include tag_sm;
+}
+
+.input_lg {
+  @include input_lg;
+}
+
+.input_md {
+  @include input_md;
+}
+
+.input_sm {
+  @include input_sm;
+}
+
+// color
+
+.main {
+  color: $main
+}
+
+.main_shade_light_1 {
+  color: $main_shade_light_1
+}
+
+.secondary {
+  color: $secondary
+}
+
+.secondary_shade {
+  color: $secondary_shade
+}
+
+.dark_1 {
+  color: $dark_1
+}
+
+.dark_2 {
+  color: $dark_2
+}
+
+.dark_3 {
+  color: $dark_3
+}
+
+.dark_4 {
+  color: $dark_4
+}
+
+.dark_5 {
+  color: $dark_5
+}
+
+.dark_6 {
+  color: $dark_6
+}
+
+.dark_7 {
+  color: $dark_7
+}
+
+.gradient_1 {
+  color: $gradient_1
+}
+
+.info {
+  color: $info
+}
+
+.info_shade {
+  color: $info_shade
+}
+
+.success {
+  color: $success
+}
+
+.success_shade {
+  color: $success_shade
+}
+
+.warning {
+  color: $warning
+}
+
+.warning_shade {
+  color: $warning_shade
+}
+
+.danger {
+  color: $danger
+}
+
+.danger_shade {
+  color: $danger_shade
+}
+
+// background-color
+// color
+
+.bg-main {
+  background-color: $main
+}
+
+.bg-main_shade_light_1 {
+  background-color: $main_shade_light_1
+}
+
+.bg-secondary {
+  background-color: $secondary
+}
+
+.bg-secondary_shade {
+  background-color: $secondary_shade
+}
+
+.bg-dark_1 {
+  background-color: $dark_1
+}
+
+.bg-dark_2 {
+  background-color: $dark_2
+}
+
+.bg-dark_3 {
+  background-color: $dark_3
+}
+
+.bg-dark_4 {
+  background-color: $dark_4
+}
+
+.bg-dark_5 {
+  background-color: $dark_5
+}
+
+.bg-dark_6 {
+  background-color: $dark_6
+}
+
+.bg-dark_7 {
+  background-color: $dark_7
+}
+
+.bg-gradient_1 {
+  background-color: $gradient_1
+}
+
+.bg-info {
+  background-color: $info
+}
+
+.bg-info_shade {
+  background-color: $info_shade
+}
+
+.bg-success {
+  background-color: $success
+}
+
+.bg-success_shade {
+  background-color: $success_shade
+}
+
+.bg-warning {
+  background-color: $warning
+}
+
+.bg-warning_shade {
+  background-color: $warning_shade
+}
+
+.bg-danger {
+  background-color: $danger
+}
+
+.bg-danger_shade {
+  background-color: $danger_shade
+}

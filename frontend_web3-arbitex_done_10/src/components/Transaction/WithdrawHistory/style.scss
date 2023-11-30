@@ -1,0 +1,129 @@
+@import '../../../variables';
+
+.withdraw-history {
+  padding: 20px;
+
+  &-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    .group {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    div {
+      &:last-child {
+        margin-left: auto;
+      }
+    }
+    margin-bottom: 20px;
+  }
+
+  &-content {
+    overflow-x: auto;
+    /* width */
+    &::-webkit-scrollbar {
+      height: 10px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+      background: $dark_6;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: $dark_5;
+    }
+    .table-content {
+      min-width: 980px;
+      @include P4;
+      color: $dark_3;
+
+      &-item {
+        display: flex;
+        border-bottom: 1px solid rgba($color: $dark_1, $alpha: 0.03);
+        padding: 10px;
+        justify-content: space-between;
+        align-items: center;
+
+        &-col {
+          flex: 1 1 0px;
+        }
+
+        div {
+          display: inline-block;
+          i {
+            margin-left: 4px;
+          }
+        }
+        
+        .status {
+          padding: 8px;
+        }
+
+        .success {
+          background-color: $success_shade;
+          color: $success;
+        }
+
+        .pending {
+          background-color: $warning_shade;
+          color: $warning;
+        }
+
+        .expired, .failed {
+          background-color: $danger_shade;
+          color: $danger;
+        }
+      }
+    }
+
+    .table-title {
+      min-width: 980px;
+      @include table_title_1;
+      background-color: rgba($color: $dark_1, $alpha: 0.03);
+      color: $dark_3;
+
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+
+      &-item {
+        flex: 1 1 0px;
+      }
+    }
+  }
+
+  &-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .withdraw-history {
+    &-header {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: flex-end;
+      div {
+        &:last-child {
+          margin-left: unset;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .withdraw-history {
+    &-footer {
+      flex-direction: column;
+    }
+  }
+}

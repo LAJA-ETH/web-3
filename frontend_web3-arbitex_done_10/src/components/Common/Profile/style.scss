@@ -1,0 +1,28 @@
+@import '../../../variables';
+
+.profile {
+  width: 90px;
+  height: 90px;
+  position: relative;
+  img {
+    border-radius: 50%;
+  }
+
+  .user-img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .edit-profile-img {
+    position: absolute;
+    left: 65%;
+    top: 65%;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+  }
+
+  input {
+    display: none;
+  }
+}

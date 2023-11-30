@@ -1,0 +1,39 @@
+@import '../../variables';
+
+.navbar {
+  width: 240px;
+  height: 100vh;
+  background: $dark_5;
+  position: sticky;
+  top: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  div:last-child {
+    margin-top: auto;
+  }
+  .bottom {
+    position: fixed;
+    bottom: 0px;
+  }
+
+  .logo {
+    padding: 20px 0px 20px 20px;
+  }
+
+  &-line {
+    background-color: rgba($color: $dark_1, $alpha: 0.05);
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .navbar {
+    margin-left: -240px;
+    transition: all 0.5s;
+  }
+
+  .bars {
+    margin-left: 0px;
+  }
+}

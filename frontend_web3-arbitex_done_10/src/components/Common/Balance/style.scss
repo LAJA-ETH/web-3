@@ -1,0 +1,22 @@
+@import '../../../variables';
+
+.balance {
+  background-color: $dark_6;
+  padding: 20px;
+  width: 512px;
+
+  &-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .title {
+      display: flex;
+      align-items: center;
+
+      img {
+        margin-right: 20px;
+      }
+    }
+  }
+}

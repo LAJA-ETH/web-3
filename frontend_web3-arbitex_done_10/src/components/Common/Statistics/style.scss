@@ -1,0 +1,56 @@
+@import '../../../variables';
+
+.statistics {
+  display: flex;
+  align-items: center;
+  
+  background: $dark_6;
+  padding: 20px;
+  justify-content: space-between;
+
+  &-icon {
+    width: 80px;
+    height: 80px;
+
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    i {
+      font-size: 24px;
+    }
+  }
+
+  &-content {
+    margin-left: 10px;
+    .value {
+      display: flex;
+      align-items: flex-end;
+
+      div:last-child {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  &-raise {
+    margin-left: auto;
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+
+    &-icon {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      div:last-child {
+        margin-left: 8px;
+      }
+    }
+  }
+}

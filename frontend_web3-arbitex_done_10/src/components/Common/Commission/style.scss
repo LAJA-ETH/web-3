@@ -1,0 +1,27 @@
+@import '../../../variables';
+
+.commission {
+  background-color: $dark_6;
+  padding: 20px;
+  width: 244px;
+
+  &-header {
+    display: flex;
+    align-items: center;
+
+    .title {
+      display: flex;
+      align-items: center;
+
+      img {
+        margin-right: 20px;
+      }
+    }
+  }
+
+  &-content {
+    div {
+      margin-top: 10px;
+    }
+  }
+}

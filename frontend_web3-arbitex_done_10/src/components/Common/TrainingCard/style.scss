@@ -1,0 +1,65 @@
+@import '../../../variables';
+
+.training-card {
+  background-color: $dark_6;
+  padding: 20px;
+  
+  .img {
+    img {
+      width: 100%;
+    }
+  }
+  &-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    .title, .content, .action {
+      margin-top: 20px;
+    }
+  
+    .action {
+      margin-top: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .button {
+        margin-left: -12px;
+      }
+    }
+  
+    &:hover {
+      cursor: pointer;
+      .action {
+        * {
+          color: $main;
+        }
+      }
+    }
+  }
+}
+
+.horizontal {
+  display: flex;
+  align-items: flex-start;
+  .img {
+    position: relative;
+
+    .playImg {
+      position: absolute;
+      width: 32px;
+      height: 32px;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .training-card-content {
+    margin-left: 10px;
+    .title, .content, .action {
+      margin-top: 0px;
+    }
+  }
+}

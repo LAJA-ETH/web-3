@@ -1,0 +1,37 @@
+@import '../../../variables';
+
+.trading-mode {
+  padding: 20px;
+
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    .trading-mode-item {
+      width: 378px;
+    }
+  }
+
+  .confirm-alert {
+    position: absolute;
+    margin-top: -140px;
+    background-color: $dark_5;
+    display: inline-block;
+    padding: 10px;
+
+    .content {
+      color: $dark_1;
+      margin-bottom: 8px;
+    }
+
+    .action {
+      display: flex;
+      gap: 10px;
+      div {
+        cursor: pointer;
+        padding: 2px 8px;
+        background-color: $main;
+      }
+    }
+  }
+}

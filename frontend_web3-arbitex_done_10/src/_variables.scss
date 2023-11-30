@@ -1,0 +1,209 @@
+// Color Palette
+  // Primary Color
+  $main: #CEB72F;
+  $main_shade_light_1: rgba(206, 183, 47, 0.1);
+
+  // Secondary Color
+  $secondary: #1EEBC6;
+  $secondary_shade: rgba(30, 235, 198, 0.1);
+
+  // Dark Color
+  $dark_1: #FFFFFF;
+  $dark_2: #909696;
+  $dark_3: #727575;
+  $dark_4: #4E5252;
+  $dark_5: #242525;
+  $dark_6: #1C1D1D;
+  $dark_7: #151616;
+
+  // Gradient
+  $gradient_1: linear-gradient(90deg, #CEB72F 0%, #1EEBC6 100%);
+
+  // Status Color
+  $info: #219FFF;
+  $info_shade: rgba(33, 159, 255, 0.1);
+  $success: #17BD8D;
+  $success_shade: rgba(23, 189, 141, 0.1);
+  $warning: #FFA114;
+  $warning_shade: rgba(255, 161, 20, 0.1);
+  $danger: #FF4E3E;
+  $danger_shade: rgba(255, 78, 62, 0.1);
+
+// Typography
+  // Heading Style
+  @mixin H1 {
+    font-family: 'Saira';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 46px;
+  }
+
+  @mixin H2 {
+    font-family: 'Saira';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  @mixin H3 {
+    font-family: 'Saira';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  @mixin H4 {
+    font-family: 'Saira';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  @mixin H5 {
+    font-family: 'Saira';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @mixin H6 {
+    font-family: 'Saira';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  // Paragraph
+  @mixin P1 {
+    font-family: 'Saira';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @mixin P2 {
+    font-family: 'Saira';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @mixin P3 {
+    font-family: 'Saira';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  @mixin P4 {
+    font-family: 'Saira';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  @mixin P5 {
+    font-family: 'Saira';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  // Text
+  @mixin table_title_1 {
+    font-family: 'Saira';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  @mixin table_title_2 {
+    font-family: 'Saira';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 19px;
+  }
+
+  @mixin btn_lg {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  @mixin btn_md {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  @mixin btn_sm {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  @mixin tag_md {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  @mixin tag_sm {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 20px;
+  }
+
+  @mixin input_lg {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  @mixin input_md {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  @mixin input_sm {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+  }
+
+  @mixin menu {
+    font-family: 'Saira';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+  }

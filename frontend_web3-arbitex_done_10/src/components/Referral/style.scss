@@ -1,0 +1,251 @@
+@import '../../variables';
+
+.referral {
+  background: #151616;
+  padding: 10px 30px;
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-left {
+      .underline {
+        .wrap {
+          display: inline-block;
+          background: $gradient_1;
+          position: relative;
+          padding: 0px 0px 3px;
+          .caption {
+            padding: 10px 40px 10px ;
+            background: #222;
+          }
+        }
+        border-bottom: 2px solid $dark_5;
+        margin-bottom: 20px;
+      }
+    }
+    
+    .referral {
+      background: unset;
+      input {
+        width: 240px;
+      }
+    }
+  }
+
+  &-content {
+    margin-top: 20px;
+    .referral-line {
+      margin: 20px 0px;
+    }
+    .upline {
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+
+      .statistics {
+        justify-content: flex-start;
+        &-icon {
+          flex-basis: 80px;
+          flex-grow: 0;
+          flex-shrink: 0;
+        }
+      }
+    }
+
+    .commissions {
+      flex-wrap: wrap;
+      display: flex;
+
+      .commission {
+        margin-right: 20px;
+        margin-top: 20px;
+      }
+    }
+
+    .referral-list {
+      overflow-x: auto;
+      .table-content {
+        max-height: 300px;
+        overflow-y: scroll;
+
+        /* width */
+        &::-webkit-scrollbar {
+          width: 3px;
+        }
+
+        /* Track */
+        &::-webkit-scrollbar-track {
+          background: $dark_6;
+        }
+
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+          background: $dark_5;
+        }
+
+        @include P4;
+        color: $dark_3;
+  
+        &-item {
+          display: flex;
+          border-bottom: 1px solid rgba($color: $dark_1, $alpha: 0.03);
+          padding: 10px;
+          justify-content: space-between;
+          align-items: center;
+  
+          div {
+            flex: 1 1 0px;
+            i {
+              margin-left: 4px;
+            }
+          }
+
+          .override {
+            &::before {
+              content: '$'
+            }
+          }
+        }
+      }
+  
+      .table-title {
+        margin-top: 20px;
+        @include table_title_1;
+        background-color: rgba($color: $dark_1, $alpha: 0.03);
+        color: $dark_3;
+  
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+  
+        &-item {
+          flex: 1 1 0px;
+        }
+      }
+    }
+
+    .partner-transaction {
+      .table-content {
+        max-height: 300px;
+        overflow-y: scroll;
+
+        /* width */
+        &::-webkit-scrollbar {
+          width: 3px;
+        }
+
+        /* Track */
+        &::-webkit-scrollbar-track {
+          background: $dark_6;
+        }
+
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+          background: $dark_5;
+        }
+        @include P4;
+        color: $dark_3;
+  
+        &-item {
+          display: flex;
+          border-bottom: 1px solid rgba($color: $dark_1, $alpha: 0.03);
+          padding: 10px;
+          justify-content: space-between;
+          align-items: center;
+  
+          div {
+            flex: 1 1 0px;
+            display: inline-block;
+            i {
+              margin-left: 4px;
+            }
+          }
+
+          .status {
+            padding: 4px;
+          }
+
+          .success {
+            background-color: $success_shade;
+            color: $success;
+          }
+  
+          .pending {
+            background-color: $warning_shade;
+            color: $warning;
+          }
+  
+          .failed {
+            background-color: $danger_shade;
+            color: $danger;
+          }
+        }
+      }
+  
+      .table-title {
+        margin-top: 20px;
+        @include table_title_1;
+        background-color: rgba($color: $dark_1, $alpha: 0.03);
+        color: $dark_3;
+  
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+  
+        &-item {
+          flex: 1 1 0px;
+        }
+      }
+    }
+
+    .referral-list, .partner-transaction {
+      overflow-x: auto;
+      .table-title, .table-content {
+        min-width: 587px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .referral {
+    &-content {
+      .upline {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .referral {
+    &-header {
+      flex-direction: column;
+      align-items: flex-start;
+  
+      .referral {
+        padding-left: 0px;
+      }
+    }
+
+    &-content {
+      .upline {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+  } 
+}
+
+@media screen and (max-width: 420px) {
+  .referral {
+    &-header {
+      .referral {
+        input {
+          width: 30vw;
+        }
+      }
+    }
+  }
+}

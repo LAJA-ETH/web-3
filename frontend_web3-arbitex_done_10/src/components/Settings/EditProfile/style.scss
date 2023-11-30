@@ -1,0 +1,49 @@
+@import '../../../variables';
+
+.edit-profile {
+  padding: 20px 40px;
+  width: 388px;
+  .my-profile {
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .info {
+    display: flex;
+    align-items: center;
+
+    i {
+      margin-right: 16px;
+    }
+  }
+  .item {
+    margin-top: 20px;
+    .cap {
+      margin-bottom: 20px;
+    }
+
+    .phone {
+      display: flex;
+      margin: 0px -4px;
+      div {
+        margin: 0px 4px;
+      }
+    }
+  }
+
+  .desc {
+    margin-top: 20px;
+  }
+
+  .btn {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .edit-profile {
+    width: 90%;
+    padding: 20px 5%;
+  }
+}

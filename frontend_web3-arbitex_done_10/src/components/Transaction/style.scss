@@ -1,0 +1,65 @@
+@import '../../variables';
+
+.transaction {
+  background: #151616;
+  &-header {
+    display: flex;
+    border-bottom: 1px solid rgba(#FFF, 0.1);
+    padding: 30px;
+    .caption {
+      margin-left: 20px;
+    }
+  }
+
+  &-section {
+    display: flex;
+
+    &-menu {
+      width: 300px;
+      padding: 30px;
+      border-right: 1px solid rgba($color: #D9D9D9, $alpha: 0.1);
+
+      .theme {
+        margin-top: 30px;
+        &-control {
+          margin-top: 20px;
+          background-color: $dark_5;
+          border-radius: 100px;
+          width: 84px;
+          height: 30px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          i {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+
+    &-content {
+      width: calc(100% - 240px);
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .transaction {
+    &-section {
+      flex-direction: column;
+  
+      &-menu {
+        flex: 100%;
+        width: 90%;
+        border-right: 0px;
+      }
+  
+      &-content {
+        flex: 100%;
+        width: 90%;
+        padding: 30px;
+      }
+    }
+  }
+}

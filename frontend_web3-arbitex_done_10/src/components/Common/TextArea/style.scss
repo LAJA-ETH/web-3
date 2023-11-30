@@ -1,0 +1,22 @@
+@import '../../../variables';
+
+.textarea {
+  background: $dark_5;
+  display: flex;
+  padding: 16px;
+  align-items: center;
+
+  textarea {
+    @include input_lg;
+    color: $dark_2;
+    height: 150px;
+
+    width: 100%;
+    background-color: transparent;
+    border: 0px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}

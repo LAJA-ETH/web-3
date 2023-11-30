@@ -1,0 +1,210 @@
+@import '../../variables';
+
+$user_table_widths: 20% 50% 20% 10%;
+
+.manage {
+  background: #151616;
+  padding: 10px 30px;
+  &-header {
+    display: flex;
+
+    .caption {
+      margin-left: 20px;
+    }
+  }
+
+  &-line {
+    margin: 20px 0px;
+  }
+
+  &-section {
+    display: flex;
+    gap: 10px;
+
+    .manage-user {
+      width: 40%;
+    }
+
+    .manage-platform {
+      width: 60%;
+      &-header {
+        margin-bottom: 20px;
+      }
+      &-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        .statistics {
+          justify-content: unset;
+          gap: 20px;
+        }
+      }
+      &-control {
+        & div {
+          margin-top: 10px;
+        }
+        .connect-wallet {
+          display: grid;
+          grid-template-columns: 40% 60%;
+          gap: 1%;
+        }
+
+        .wallet-confirm {
+          display: grid;
+          grid-template-columns: 80% 20%;
+          gap: 10px;
+        }
+      }
+    }
+  }
+
+  &-transactions {
+    &-header {
+      margin-bottom: 20px;      
+    }
+  
+    &-content {
+      .table-content {
+        @include P4;
+        color: $dark_3;
+  
+        &-item {
+          display: flex;
+          border-bottom: 1px solid rgba($color: $dark_1, $alpha: 0.03);
+          padding: 10px;
+          align-items: center;
+  
+          .col {
+            flex: 1 1 0px;
+          }
+          div {
+            display: inline-block;
+            i {
+              margin-left: 4px;
+            }
+          }
+          
+          .status {
+            padding: 8px;
+          }
+  
+          .Completed {
+            background-color: $success_shade;
+            color: $success;
+          }
+  
+          .Pending {
+            background-color: $warning_shade;
+            color: $warning;
+          }
+  
+          .Canceled {
+            background-color: $danger_shade;
+            color: $danger;
+          }
+
+          .amount, .profit {
+            &::before {
+              content: '$'
+            }
+          }
+        }
+      }
+  
+      .table-title {
+        @include table_title_1;
+        background-color: rgba($color: $dark_1, $alpha: 0.03);
+        color: $dark_3;
+  
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+  
+        &-item {
+          flex: 1 1 0px;
+        }
+      }
+    }
+  
+    &-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+  }
+
+  &-user {
+    &-header {
+      margin-bottom: 20px;      
+    }
+  
+    &-content {
+      .table-content {
+        @include P4;
+        color: $dark_3;
+  
+        &-item {
+          display: grid;
+          grid-template-columns: $user_table_widths;
+          border-bottom: 1px solid rgba($color: $dark_1, $alpha: 0.03);
+          padding: 10px;
+          align-items: center;
+  
+          .col {
+            flex: 1 1 0px;
+
+            .checkbox {
+              width: 10px;
+              height: 10px;
+              border: 1px solid $dark_2;
+              background-color: $dark_2;
+              cursor: pointer;
+            }
+
+            .checked {
+              background-color: $success
+            }
+          }
+          div {
+            display: inline-block;
+            i {
+              margin-left: 4px;
+            }
+          }
+          
+          .amount, .profit {
+            &::before {
+              content: '$'
+            }
+          }
+        }
+      }
+  
+      .table-title {
+        @include table_title_1;
+        background-color: rgba($color: $dark_1, $alpha: 0.03);
+        color: $dark_3;
+  
+        display: grid;
+        grid-template-columns: $user_table_widths;
+        padding: 10px;
+  
+        &-item {
+          flex: 1 1 0px;
+        }
+      }
+    }
+  
+    &-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 1120px) {
+
+}

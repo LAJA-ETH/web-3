@@ -1,0 +1,178 @@
+@import '../../variables';
+
+.register {
+  display: flex;
+  height: 100vh;
+
+  &-left {
+    background: $dark_5;
+    width: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-right {
+    background: $dark_7;
+    overflow-y: scroll;
+    width: 50%;
+
+    display: flex;
+
+    &-container {
+      margin: auto;
+      margin-left: 6vw;
+      width: 378px;
+
+      .sub-title {
+        margin-top: 20px;
+      }
+
+      .first-hr,
+      .second-hr {
+        margin: 20px 0px;
+      }
+
+      .input-text {
+        margin: 10px 0px;
+      }
+
+      .no-account {
+        margin: 20px 0px 10px;
+      }
+
+      .register-btn {
+        background: $main;
+        @include btn_lg;
+        text-align: center;
+        padding: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        margin-bottom: 10px;
+      }
+
+      .text-but {
+        text-align: center;
+      }
+
+      .space-x {
+        margin-top: 10px;
+      }
+
+      .signup-btn {
+        border: 1px solid $dark_5;
+        @include btn_lg;
+        color: $dark_1;
+        text-align: center;
+        padding: 16px;
+      }
+    }
+  }
+}
+
+.agree-modal {
+  * {
+    white-space: pre-wrap;
+  }
+
+  .action {
+    height: 40px;
+    width: 97%;
+    position: absolute;
+    background-color: $dark_7;
+    z-index: 5;
+  }
+
+  &-header {}
+
+  &-content {
+    overflow-y: hidden;
+
+    max-height: 600px;
+    overflow-y: auto;
+
+    &-item {
+      position: relative;
+
+      .caption {
+        position: sticky;
+        z-index: 10;
+        top: 0;
+      }
+
+      .content {}
+    }
+
+    &::-webkit-scrollbar {
+      width: 3px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+      background: $dark_6;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: $dark_5;
+    }
+  }
+
+  .hr {
+    margin: 10px 0px;
+  }
+
+  &-footer {
+    padding: 10px 0px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .agree-text {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      .checkbox {
+        border: 1px solid $dark_4;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+      }
+
+      .select {
+        background: $main;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .register {
+    &-left {
+      display: none;
+    }
+
+    &-right {
+      width: 100%;
+      justify-content: center;
+
+      &-container {
+        margin: auto;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .register {
+    &-right {
+      &-container {
+        width: 90vw;
+      }
+    }
+  }
+}
